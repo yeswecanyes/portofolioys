@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmyn Sraieb</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header avec le menu -->
+    <header>
+        <nav>
+            <h1>yasmyn sraieb</h1>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#tunisia">Tunisia</a></li>
+                <li><a href="#france">France</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page d'accueil avec toutes les images -->
+    <section id="home" class="gallery home-page">
+        <div class="gallery-container">
+            <div class="photo" style="background-image: url('images/photo1.jpg');" onclick="openModal('images/photo1.jpg')"></div>
+            <div class="photo" style="background-image: url('images/photo2.jpg');" onclick="openModal('images/photo2.jpg')"></div>
+            <div class="photo" style="background-image: url('images/photo3.jpg');" onclick="openModal('images/photo3.jpg')"></div>
+            <div class="photo" style="background-image: url('images/photo4.jpg');" onclick="openModal('images/photo4.jpg')"></div>
+            <div class="photo" style="background-image: url('images/photo5.jpg');" onclick="openModal('images/photo5.jpg')"></div>
+            <div class="photo" style="background-image: url('images/photo6.jpg');" onclick="openModal('images/photo6.jpg')"></div>
+            <div class="photo" style="background-image: url('images/photo7.jpg');" onclick="openModal('images/photo7.jpg')"></div>
+            <div class="photo" style="background-image: url('images/photo8.jpg');" onclick="openModal('images/photo8.jpg')"></div>
+        </div>
+    </section>
+
+    <!-- Section Tunisia -->
+    <section id="tunisia" class="gallery">
+        <h2>Tunisia</h2>
+        <div class="gallery-container">
+            <div class="photo" style="background-image: url('images/tunisia1.jpg');" onclick="openModal('images/tunisia1.jpg')"></div>
+            <div class="photo" style="background-image: url('images/tunisia2.jpg');" onclick="openModal('images/tunisia2.jpg')"></div>
+            <div class="photo" style="background-image: url('images/tunisia3.jpg');" onclick="openModal('images/tunisia3.jpg')"></div>
+            <div class="photo" style="background-image: url('images/tunisia4.jpg');" onclick="openModal('images/tunisia4.jpg')"></div>
+        </div>
+    </section>
+
+    <!-- Section France -->
+    <section id="france" class="gallery">
+        <h2>France</h2>
+        <div class="gallery-container">
+            <div class="photo" style="background-image: url('images/france1.jpg');" onclick="openModal('images/france1.jpg')"></div>
+            <div class="photo" style="background-image: url('images/france2.jpg');" onclick="openModal('images/france2.jpg')"></div>
+            <div class="photo" style="background-image: url('images/france3.jpg');" onclick="openModal('images/france3.jpg')"></div>
+            <div class="photo" style="background-image: url('images/france4.jpg');" onclick="openModal('images/france4.jpg')"></div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <h2>contact me</h2>
+        <form>
+            <input type="text" placeholder= "your name"=""" required>
+            <input type="email" placeholder="your email" required>
+            <textarea placeholder="your message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Modale pour afficher l'image en grand -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">×</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Yasmyn Sraieb. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
